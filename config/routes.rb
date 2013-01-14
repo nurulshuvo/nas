@@ -4,6 +4,9 @@ Nas::Application.routes.draw do
   
   get "users/new"
   match "/signup", to: 'users#new'
+  match "/signin", to: 'sessions#new'
+  match "/signout", to: 'sessions#destroy'
+  match "/sessions", to: 'sessions#create'
 
   match '/help', to: 'static_pages#help'
   match '/about', to: 'static_pages#about'
