@@ -150,3 +150,18 @@ input, textarea, select, .uneditable-input{
 	border-color: red;
 	color: red;
 }
+
+/* users index */
+
+.users{
+	list-style: none;
+	margin: 0;
+	li{
+		overflow: auto;
+		padding: 10px 0;
+		border-top: 1px solid #e3e3e3;
+		&:last-child{
+			border-bottom: 1px solid #e3e3e3;
+		}
+	}
+}
